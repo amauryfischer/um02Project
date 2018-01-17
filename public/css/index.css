@@ -1,0 +1,67 @@
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+#map {
+  width: 50em;
+  height: 35em;
+  margin: 1em;
+}
+/* fallback */
+#tree {
+  margin-top: 1em;
+}
+
+#selectedNodes {
+  margin-top: 1em;
+  margin-right: 1em;
+}
+.search {
+  left: 0;
+  right: 0;
+  top: 10px;
+  margin-top: 1px;
+  padding: 1px 0 0 0;
+  z-index: 2;
+}
+.search-wrapper {
+  margin: 1em;
+  width: 70%;
+  -webkit-transition: margin .25s ease;
+  transition: margin .25s ease;
+}
+svg.fa-search {
+  font-size: 20px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+.search-wrapper input#search {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  width: 100%;
+  height: 45px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 45px 0 15px;
+  border: 0;
+}
+#rowmap {
+  height: 35em;
+  overflow: scroll;
+}
+.row {
+  margin-bottom: 20px;
+}

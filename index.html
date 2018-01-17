@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+  <!-- ***************** css load *******************-->
+
+  <!-- framework for css -->
+  <link rel="stylesheet" type="text/css" href="public/css/lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="public/css/lib/materialize.min.css">
+
+  <!-- powerfull treeview https://github.com/jonmiles/bootstrap-treeview -->
+  <link rel="stylesheet" type="text/css" href="public/css/lib/treeview.min.css">
+
+  <!-- leaflet library to display map -->
+  <link rel="stylesheet" type="text/css" href="public/css/lib/leaflet/leaflet.css">
+
+  <!-- current file basic css -->
+  <link rel="stylesheet" type="text/css" href="public/css/index.css">
+
+  <!-- ***************** js load *******************-->
+  <script src="public/js/lib/jquery-3.2.1.min.js"></script>
+  <script src="public/js/lib/bootstrap.min.js"></script>
+  <script src="public/js/lib/materialize.min.js"></script>
+  <script src="public/js/lib/treeview.min.js"></script>
+  <script src="public/js/lib/leaflet/leaflet.js"></script>
+  <script src="public/js/lib/fontawesome-all.min.js"></script>
+  <script src="public/js/index.js"></script>
+  <script src="public/js/tree.js"></script>
+  <script src="public/js/mockServerCall.js"></script>
+  <!-- to remove when you remove the mock -->
+    <script src="public/js/cities/lilleGeoJson.js"></script>
+    <script src="public/js/cities/englosGeoJson.js"></script>
+    <script src="public/js/cities/perenchiesGeoJson.js"></script>
+    <script src="public/js/cities/ennentiereGeoJson.js"></script>
+    <script src="public/js/cities/lambersartGeoJson.js"></script>
+    <script src="public/js/cities/capinghemGeoJson.js"></script>
+    <script src="public/js/cities/saintandreGeoJson.js"></script>
+    <script src="public/js/cities/sequedinGeoJson.js"></script>
+    <script src="public/js/cities/lezenneGeoJson.js"></script>
+    <script src="public/js/cities/villeneuveGeoJson.js"></script>
+    <script src="public/js/cities/loosGeoJson.js"></script>
+    <script src="public/js/cities/monsGeoJson.js"></script>
+    <script src="public/js/cities/madeleineGeoJson.js"></script>
+    <script src="public/js/cities/lompretGeoJson.js"></script>
+    <script src="public/js/cities/fachesGeoJson.js"></script>
+    <script src="public/js/cities/premesquesGeoJson.js"></script>
+    <script src="public/js/cities/marcGeoJson.js"></script>
+    <script src="public/js/cities/ronchinGeoJson.js"></script>
+    <script src="public/js/cities/wattigniesGeoJson.js"></script>
+  <!-- selectedNodes-->
+</head>
+
+<body>
+  <div id="rowmap" class="row">
+    <div class="col s5">
+      <!-- map container -->
+      <div class="search">
+        <div class="search-wrapper card">
+          <input id="search">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <div id="tree"></div>
+      <div class="col s6">
+        <div class="collection" id="selectedNodes"></div>
+        <div class="card" id="selectedNodes"></div>
+      </div>
+    </div>
+    <div class="col s6">
+      <!-- map container -->
+      <div id="map"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="card">
+      Voisins : 
+  <div id="mCardContent" class="card-content">
+    Informations
+  </div>
+  <script>
+  $(document).ready(function(){
+    $('ul.tabs').tabs();
+  });
+  </script>
+  <div class="card-tabs">
+    <ul class="tabs tabs-fixed-width">
+      <li class="tab"><a href="#test4">Densite de population</a></li>
+      <li class="tab"><a class="active" href="#test5">Surface habitable</a></li>
+      <li class="tab"><a href="#test6">Pollution</a></li>
+    </ul>
+  </div>
+  <div class="card-content grey lighten-4">
+    <div id="test4">Densite de population</div>
+    <div id="test5">Surface habitable</div>
+    <div id="test6">Pollution</div>
+  </div>
+</div>
+  </div>
+</body>
+
+</html>
